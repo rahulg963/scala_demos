@@ -1,5 +1,6 @@
 object Hello{
 	def main(args:Array[String]) : Unit = {
-		print("Hello\n")
+		print("Hello World\n")
+
 	}
 }
