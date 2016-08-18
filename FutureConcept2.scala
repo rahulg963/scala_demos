@@ -43,7 +43,16 @@ object FutureConcept2{
 		// 	case Success(n) => println(n)
 		// 	case Failure(ex) => println("Something Went Wrong" + ex)
 		// }
-		// Thread.sleep(2000)
+		
+		// Whatever future is first completed.
+		// val fut = List(f1,f2);
+		// val FirstFuture = Future.firstCompletedOf(fut);
+
+		// Gor Every Future Return
+		// val allFutures = Future.sequence(pages)
+		// allFutures.foreach(println)
+
+		Thread.sleep(2000)
 		println("This is Last")					
 		
 	}
