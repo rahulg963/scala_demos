@@ -4,7 +4,9 @@ object HighOrderFunc{
 		println( apply( layout, 10) )
 	}
 
-	def apply(f: Int => String, v: Int) = f(v)
+	def apply(f: Int => String, v: Int) : String = {
+		f(v)
+	}
 	
 	def layout[A](x: A) = "[" + x.toString() + "]"
 
