@@ -11,17 +11,24 @@ object ActorS{
 
 	def main(args : Array[String]){ 
 		val system = ActorSystem("SimpleSytem")
-		val actor = system.actorOf(Props[SimpleActor], "SimpleActor")
+		val actor1 = system.actorOf(Props[SimpleActor], "Rahul")
+		val actor2 = system.actorOf(Props[SimpleActor], "Archit")
 		
 		println("Before messages")
 		
-		actor ! "Hi there."
+		actor1.!("Hi there.")
 		println("After String")
 		
-		actor ! 42
+		actor2 ! 42
 		println("After int")
 
-		actor ! 'a'
+		actor1 ! "a"
 		println("After char")
+		
+		
+		//Deprocated
+		system.shutdown()
+
+		//system.terminate()
 	}
 }

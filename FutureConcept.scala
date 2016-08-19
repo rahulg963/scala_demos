@@ -34,7 +34,8 @@ object FutureConcept{
 			case Failure(ex) => println("Something Went Wrong" + ex)
 		}
 		//Thread.sleep(5000)
-		println("This is Last")					
+		println("This is Last")	
+		Thread.sleep(5000)				
 		
 	}
 }

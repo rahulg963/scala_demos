@@ -1,0 +1,24 @@
+Meeting Time with Amit
+See Analytics of Message
+----------------------------
+					//message read status
+					//pagination -> Offset and size
+					//sorting -> ascending and descending
+					//unread and read getting message.
+					//Message Type -> Message_Format
+					//message_string should be json
+					//message_count
+					//msg_status -> read and unread
+					//sender_id should be agent_id and user_id
+Filter on Message on Type
+					//sender_type
+
+----------
+
+----------
+
+time ago for first time format )-> Calculate UNIX time of now and message
+
+End Point of Status of Message - > Opsort of mongo - > findmodify
+	-> Message_id 
+	update array of json update and new.
